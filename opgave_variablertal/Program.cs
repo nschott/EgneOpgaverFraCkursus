@@ -10,6 +10,8 @@ namespace opgave_variablertal
     {
         static void Main(string[] args)
         {
+            //Ændring er lavet
+            
             int heltal1 = 10;
             heltal1++;
             Console.WriteLine(heltal1);
