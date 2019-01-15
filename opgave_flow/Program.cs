@@ -12,7 +12,7 @@ namespace opgave_flow
                 for (int y = 0; y < 10; y++)
                 {
                     visTal = y*x;
-                    Console.WriteLine(visTal);
+                    Console.Write(visTal);
                 }
             }
 
