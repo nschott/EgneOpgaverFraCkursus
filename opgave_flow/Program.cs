@@ -6,7 +6,15 @@ namespace opgave_flow
     {
         static void Main(string[] args)
         {
-            
+            int visTal;
+            for (int x = 0; x < 10; x++)
+            {
+                for (int y = 0; y < 10; y++)
+                {
+                    visTal = y*x;
+                    Console.WriteLine(visTal);
+                }
+            }
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
