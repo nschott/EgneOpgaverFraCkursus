@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opgave_datetime", "opgave_d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opgave_strenge", "opgave_strenge\opgave_strenge.csproj", "{A011DD66-4922-42BE-9A15-9F91F09399EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opgave_struct", "opgave_struct\opgave_struct.csproj", "{B2589CC5-DB40-4783-B589-7993FE4227E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A011DD66-4922-42BE-9A15-9F91F09399EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A011DD66-4922-42BE-9A15-9F91F09399EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A011DD66-4922-42BE-9A15-9F91F09399EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2589CC5-DB40-4783-B589-7993FE4227E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2589CC5-DB40-4783-B589-7993FE4227E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2589CC5-DB40-4783-B589-7993FE4227E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2589CC5-DB40-4783-B589-7993FE4227E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
