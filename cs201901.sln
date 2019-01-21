@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "opgave_struct", "opgave_str
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "opgave_flow", "opgave_flow\opgave_flow.csproj", "{57CC7C08-19F9-4F13-8456-418754E4B1A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tips_og_hints", "tips_og_hints\tips_og_hints.csproj", "{F9DB1B18-1063-4C92-B65C-436CEFEE599D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tips_og_hints", "tips_og_hints\tips_og_hints.csproj", "{F9DB1B18-1063-4C92-B65C-436CEFEE599D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opgave_metoder", "opgave_metoder\opgave_metoder.csproj", "{CBDFEB1D-7DFE-4B98-9323-3E3428EFA88B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "opgave_metoder", "opgave_metoder\opgave_metoder.csproj", "{CBDFEB1D-7DFE-4B98-9323-3E3428EFA88B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatiskOpgave", "StatiskOpgave\StatiskOpgave.csproj", "{D0E1961C-4D7B-47FE-B5B8-08DD3E76F818}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatiskOpgave", "StatiskOpgave\StatiskOpgave.csproj", "{D0E1961C-4D7B-47FE-B5B8-08DD3E76F818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fejl_simple", "fejl_simple\fejl_simple.csproj", "{AB383ADC-931A-482B-922A-221601F29B15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fejl_simple", "fejl_simple\fejl_simple.csproj", "{AB383ADC-931A-482B-922A-221601F29B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "klasser_simpel", "klasser_simpel\klasser_simpel.csproj", "{25652D17-039F-4C2C-A540-2236F718498E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{AB383ADC-931A-482B-922A-221601F29B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB383ADC-931A-482B-922A-221601F29B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB383ADC-931A-482B-922A-221601F29B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25652D17-039F-4C2C-A540-2236F718498E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25652D17-039F-4C2C-A540-2236F718498E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25652D17-039F-4C2C-A540-2236F718498E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25652D17-039F-4C2C-A540-2236F718498E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

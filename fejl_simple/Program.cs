@@ -24,7 +24,7 @@ Again:
                     goto Again;
                 }
             }
-            
+
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 Console.Write("Press any key to continue . . . ");
