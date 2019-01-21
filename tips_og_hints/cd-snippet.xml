@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>for</Title>
+      <Author>Michell Cronberg</Author>
+      <Description>Keep console open</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>cd</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$">
+        <![CDATA[if (System.Diagnostics.Debugger.IsAttached)
+{
+  Console.Write("Press any key to continue . . . ");
+  Console.ReadKey();
+}$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
