@@ -9,8 +9,19 @@ namespace klasser_simpel
             Person p1 = new Person();
             Person p2 = new Person("Nicholas", "Schott", 1967);
 
-            Console.WriteLine($"P1 Navn og alder: {p1.FuldtNavn()} og {p1.Alder()}");
-            Console.WriteLine($"P2 Navn og alder: {p2.FuldtNavn()} og {p2.Alder()}");
+            Console.WriteLine("Test af klasser og constructor");
+            Console.WriteLine("Indtast fornavn for person 1");
+            string fornavn = Console.ReadLine();
+            Console.WriteLine("Indtast efternavn for person 1");
+            string efternavn = Console.ReadLine();
+            Console.WriteLine("Indtast fødselsår for person 1");
+            string alder = Console.ReadLine();
+            p1.Fornavn = fornavn;
+            p1.Efternavn = efternavn;
+            p1.Fødselsår = Convert.ToInt32(alder);
+
+            Console.WriteLine($"P1 Navn og estimeret alder: {p1.FuldtNavn()} og {p1.EstimeretAlder()}");
+            Console.WriteLine($"P2 Navn og estimeret alder: {p2.FuldtNavn()} og {p2.EstimeretAlder()}");
             
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -57,7 +68,7 @@ namespace klasser_simpel
             return tmpFornavn + " " + tmpEfternavn;
         }
 
-        public int Alder()
+        public int EstimeretAlder()
         {
             return DateTime.Now.Year - this.Fødselsår;
         }

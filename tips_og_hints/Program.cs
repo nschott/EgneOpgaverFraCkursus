@@ -10,6 +10,7 @@ namespace tips_og_hints
             // copy *.snippet "C:\Users\admin\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets"
             // Ligger på X-drevet, som hhv. cd.snippet, ck.snippet og cr.snippet
 
+
             // Husk at checke .editorconfig
 
             // Build cross platform desktop apps
