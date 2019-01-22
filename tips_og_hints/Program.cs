@@ -12,6 +12,9 @@ namespace tips_og_hints
 
             // Husk at checke .editorconfig
 
+            // Build cross platform desktop apps
+            // https://electronjs.org/
+
             Console.WriteLine("Hello World!");
         }
     }
