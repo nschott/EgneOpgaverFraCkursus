@@ -30,6 +30,8 @@ namespace tips_og_hints
             // Project Razor
             // Er nået til: https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio
 
+            // Tilføj 'Class View' el. 'Class diagram' til et projekt for at få genereret overblik over klasser
+
             Console.WriteLine("Hello World!");
         }
     }
