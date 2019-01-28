@@ -20,10 +20,11 @@ namespace opgave_arv_terning
             for (int i = 0; i < 10; i++)
             {
                 l1.Skriv();
-                if (l1.ErGlobus())
-                    Console.WriteLine("Det var en Globus!");
-                if (l1.ErStjerne())
-                    Console.WriteLine("Det var en Stjerne!");
+                // Flg. blev benyttet før Skriv() blev udsat for 'override' i LudoTerning klassen:
+                //if (l1.ErGlobus())
+                //    Console.WriteLine("Det var en Globus!");
+                //if (l1.ErStjerne())
+                //    Console.WriteLine("Det var en Stjerne!");
                 l1.Ryst();
             }
 
@@ -43,14 +44,18 @@ namespace opgave_arv_terning
 
     class LudoTerning : Terning
     {
-        public LudoTerning() : base()
+        public LudoTerning() : base() { }
+
+        public LudoTerning(int _værdi) : base(_værdi) { }
+        
+        public override void Skriv()
         {
-
-        }
-
-        public LudoTerning(int _værdi) : base(_værdi)
-        {
-
+            if (ErGlobus())
+                Console.WriteLine("[G]");
+            else if (ErStjerne())
+                Console.WriteLine("[S]");
+            else
+                Console.WriteLine($"[{this.Værdi}]");
         }
 
         public bool ErGlobus()
@@ -97,7 +102,7 @@ namespace opgave_arv_terning
             return Værdi = rnd.Next(1, 7);
         }
 
-        public void Skriv()
+        public virtual void Skriv()
         {
             Console.WriteLine($"[{this.Værdi}]");
         }
