@@ -6,10 +6,17 @@ namespace opgave_interface_dependency_injection
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Find tal til terning uden dependency injection");
             ITilfældighedsGenerator m = new TilfældighedsGeneratorMock(1);
             Console.WriteLine(m.FindTalTilTerning());
             ITilfældighedsGenerator f = new TilfældighedsGeneratorFramework();
             Console.WriteLine(f.FindTalTilTerning());
+
+            Console.WriteLine();
+            Console.WriteLine("Fin tal til terning MED dependency injection");
+            TilfældighedsGeneratorFramework f1 = new TilfældighedsGeneratorFramework();
+            Terning t1 = new Terning(f1);
+            Console.WriteLine(t1.Værdi);
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -27,14 +34,22 @@ namespace opgave_interface_dependency_injection
     class TilfældighedsGeneratorFramework : ITilfældighedsGenerator
     {
         private static System.Random rnd = new Random();
-        private int _tal;
-
-        public int Tal
+        public int Tal { get; set; }
+        
+        public int FindTalTilTerning()
         {
-            get { return _tal; }
-            set { _tal = rnd.Next(1,7); }
+            Tal = rnd.Next(1, 7);
+            return Tal;
         }
-                
+    }
+
+    class TilfældighedsGeneratorMock : ITilfældighedsGenerator
+    {
+        public int Tal { get; set; }
+        public TilfældighedsGeneratorMock(int tal)
+        {
+            Tal = tal;
+        }
 
         public int FindTalTilTerning()
         {
@@ -42,18 +57,27 @@ namespace opgave_interface_dependency_injection
         }
     }
 
-    class TilfældighedsGeneratorMock : ITilfældighedsGenerator
+    class Terning : ITilfældighedsGenerator
     {
-        private int _tal;
-        public TilfældighedsGeneratorMock(int tal)
+        public int Værdi { get; set; }
+
+        private ITilfældighedsGenerator generator;
+        
+                
+        public Terning(ITilfældighedsGenerator rnd)
         {
-            _tal = tal;
-           
+            generator = rnd;
+            Ryst();
+        }
+
+        public void Ryst ()
+        {
+            this.Værdi = generator.FindTalTilTerning();
         }
 
         public int FindTalTilTerning()
         {
-            return _tal;
+            throw new NotImplementedException();
         }
     }
 }

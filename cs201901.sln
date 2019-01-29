@@ -51,6 +51,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opgave_interface", "opgave_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opgave_interface_dependency_injection", "opgave_interface_dependency_injection\opgave_interface_dependency_injection.csproj", "{B7274F0D-B7EE-434B-9EF6-1847615063BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opgave_delegates", "opgave_delegates\opgave_delegates.csproj", "{A0A8313F-FB50-4F5C-8DCA-A25A31B5EC59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opgave_events_filewatcher", "opgave_events_filewatcher\opgave_events_filewatcher.csproj", "{04A840E7-6867-4615-BDBE-CB4E35AB1AFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +157,14 @@ Global
 		{B7274F0D-B7EE-434B-9EF6-1847615063BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7274F0D-B7EE-434B-9EF6-1847615063BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7274F0D-B7EE-434B-9EF6-1847615063BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A8313F-FB50-4F5C-8DCA-A25A31B5EC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A8313F-FB50-4F5C-8DCA-A25A31B5EC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A8313F-FB50-4F5C-8DCA-A25A31B5EC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A8313F-FB50-4F5C-8DCA-A25A31B5EC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A840E7-6867-4615-BDBE-CB4E35AB1AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A840E7-6867-4615-BDBE-CB4E35AB1AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A840E7-6867-4615-BDBE-CB4E35AB1AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A840E7-6867-4615-BDBE-CB4E35AB1AFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
