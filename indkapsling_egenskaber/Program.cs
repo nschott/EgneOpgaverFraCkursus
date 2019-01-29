@@ -13,8 +13,6 @@ namespace indkapsling_egenskaber
             p1.Efternavn = Console.ReadLine();
             Console.WriteLine($"Indtastet navn er: {p1.FuldtNavn}");
 
-            
-
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 Console.Write("Press any key to continue . . . ");
